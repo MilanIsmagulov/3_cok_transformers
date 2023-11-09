@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat' , 'Material Icons' , sans-serif;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #fff;
+}
+
+
+.incorrect {
+    background-color: rgb(255, 144, 144) !important;
+}
+
+.quiz_window p{
+    color: rgb(255, 114, 118);
+    font-weight: 700;
+}
+
+.quiz_window p span{
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 25px;
+}
+
+.questions p{
+
+    padding: 10px;
+    color: rgb(255, 114, 118);
+    font-weight: 700;
+}
+
+.questions input{
+    height: 50px;
+    padding: 15px;
+    font-size: 25px;
+    border-radius: 15px;
+    width: 700px;
+}
+
+.window_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answers_btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answers_btn form{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.answers_btn input{
+    font-size: 25px;
+    width: 150px;
+    margin: 25px;
+}
+
+.number_marker img{
+    margin-right: 25px;
+    height: 50px;
+    font-size: 50px;
+    color: #000;
+}
+
+#description_1 {
+    font-size: 25px;
+    margin-right: 25px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 800,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+
+.number_marker{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.number_marker p{
+    font-size: 25px;
+    color: #000;
+    padding: 25px;
+    border-left: 3px solid #000;
+}
+
+.step_marker{
+    color: rgb(191, 191, 191);
+    margin-left: 25px;
+}
+
+
+.step_marker_and_buttons{
+    margin-top:0.5em !important;
+    padding-right: 1em;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: flex;
+}
+
+.main_buttons button{
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    border: 0;
+    background: rgb(0, 114, 192);
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.main_buttons button:active{
+    background: rgb(40, 142, 211);
+}
+
+.answers_btn form div{
+    display: flex;
+    align-items: center;
+    border: solid 0px #00000080;
+    width: 1000px;
+    margin: 15px;
+    height: 120px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    
+}
+.shadowbox{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.njc{
+    justify-content: flex-start;
+}
+.answers_btn form div input{
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 41px;
+    max-width: 41px;
+}
+
+.answers_btn form{
+    border-radius: 35px;
+    width: 1030px;
+}
+
+.answers_btn form div p{
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
+
+.correct{
+    cursor: no-drop;
+    transition: all 0.3s;
+    background-color: rgb(168, 255, 168) !important;
+}
+
+.incorrect{
+    cursor: no-drop;
+    transition: all 0.3s;
+    background: rgb(255, 144, 144) !important;
+}
+
+.correct input{
+    cursor: no-drop;
+}
+
+.incorrect input{
+    cursor: no-drop;
+}
+
+.answer_div img{
+    margin-left: 25px;
+    height: 40px;
+}
+
+@media (max-width: 1180px) {
+    body{
+        width: 100%;
+
+    }
+
+    .answers_btn form div {
+        width: 700px;
+    }
+    .choices_div2{
+        width: 700px;
+    }
+    .question_part #question {
+        padding: 10px;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    .button_part {
+        margin-top: 5px;
+        padding-bottom: 0px;
+    }
+
+    .step_marker_and_buttons {
+        width: 95vw;
+        padding-bottom: 50px;
+        
+    }
+
+    .main_buttons button {
+        width: 130px;
+    }
+}
+
+.step_marker_and_buttons{
+    padding-bottom: 0.5em !important;
+    width: 96%;
+    z-index: 3;
+    position: fixed;
+    bottom:0em;
+    background-color: white;
+    padding-top:0.5em;
+}
+
+
+/*Добавлено*/
+.shadowbox{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.popup_text h3 p span{
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: 15px;
+}
+.popup_text h3 p{
+    font-size: 0.7em;
+}
+.left_side{
+    width: 100%;
+    margin-bottom: 2.5em;
+    
+}
+
+.bluetext{
+    color:#0070c0 !important;
+}
+.strtext{
+    color:#44546a !important;
+}
+
+.blocked{
+    background-color: #bfbfbf !important;
+}
+.flexcenter{
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-direction: column;
+}
+.left40{
+    left:40% !important;
+}
+.fs7{
+    font-size: 0.7em !important;
+}
+
+.ml2{
+    margin-left: 2em !important;
+}
+.mr3{
+    margin-right: 3em;
+}
+.mr2{
+    margin-right: 2em;
+}
+.mr4{
+    margin-right: 4em;
+}
+.mt0{
+    margin-top: 0em !important;
+}
+.mb05{
+    margin-bottom: 0.5em !important;
+}
+.pad4{
+    padding-top: 4em !important;
+    padding-bottom: 4em !important;
+}
+.pad1{
+    padding: 1em !important;
+}
+.fs09 *{
+    font-size: 0.9em !important;
+}
+.w45{
+    width: 45%;
+}
+.w20{
+    width: 20% !important;
+    object-fit: contain;
+}
+.w30{
+    width: 30% !important;
+    object-fit: contain;
+
+}
+.w35{
+    width: 35% !important;
+    object-fit: contain;
+
+}
+.w25{
+    width: 25% !important;
+    object-fit: contain;
+
+}
+.w70{
+    width: 70% !important;
+}
+.w60{
+    width: 60% !important;
+}
+.w80{
+    width: 80% !important;
+}
+.w90{
+    width: 90% !important;
+}
+.w100{
+    width: 100% !important;
+}
+.w50{
+    width: 50% !important;
+}
+.w40{
+    width: 40% !important;
+}
+.w10{
+    width: 10% !important;
+}
+.m-b2{
+    margin-bottom: 1em;
+}
+.mb1{
+    margin-bottom: 1em;
+}
+.inline{
+    display: inline-block;
+}
+.smalltext{
+    font-size: 0.5em !important;
+    position: relative;
+    top:0.4em;
+}
+.noshadow{
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0) !important;
+}
+.fs06{
+    font-size: 0.6em;
+}
+.TxtAlgCen{
+    text-align: center;
+    align-items: center;
+}
+.lh0{
+    line-height: 0.4em;
+}
+.m1{
+    margin:1em !important;
+}
+.nomargin{
+    margin:0em !important;
+}
+/*Стили для вопросов слева без картинки*/
+.leftquestion{
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    
+}
+/*Стили для блока: изображение слева справа текст*/
+.leftimage.img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    object-fit: contain;
+}
+.leftimage.img img{
+    width: 70%;
+}
+.leftimage.text{
+    display: inline-block;
+    width: 55%;
+    margin-left:2.5em;
+}
+.leftimage.text img{
+    width: 80%;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+}
+.leftimage{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+}
+.left30{
+    left: 30% !important;
+}
+.l34b94{
+    left: 34% !important;
+    bottom: 94% !important;
+}
+/*Стили для блока: Картинка слева, справа поле для ввода ответа*/
+.imgquest.imgpart{
+    width: 40%;
+    margin-right:2em;
+}
+.imgquest.imgpart img{
+    width: 100%;
+}
+.imgquest{
+    display: flex;
+}
+.imgquest input{
+    position: relative;
+    top:70%;
+    left: 20%;
+    margin-top: 1em;
+    width: 60%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1.5px solid #999999;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.imgquest.answer.down{
+    width: 30%;
+    flex-direction: column;
+    margin-right: 4em;
+}
+.aboveinput{
+    position: relative;
+    top:70%;
+    left: 20%;
+    color: gray !important;
+    font-size: 0.9em;
+}
+.undertext{
+    position: static !important;
+    margin-top:1em;
+}
+.imgquest.answer.down.text{
+    display: block !important;
+}
+
+
+
+/*Стили для блока: картинка под ней чекбокс(радио)*/
+.imgcheckbox{
+    width: 20%;
+    margin-left:1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgcheckbox img{
+    width: 90%;
+    margin-bottom: 2em;
+}
+.imgradio{
+    display: flex;
+    justify-content: center;
+}
+.imgcheckbox input{
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 41px;
+    max-width: 41px;
+    display: flex;
+}
+
+/*Стили для блока: вопрос без картинки, 1 вариант ответа*/
+.radioquest{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 4em;
+}
+.grgap2{
+    grid-gap:2em !important;
+}
+.radioquest.plusimg{
+    width: 60%;
+
+}
+.variant{
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+.variant input{
+    min-height: 40px;
+    min-width: 40px;
+    max-height: 41px;
+    max-width: 41px;
+    display: inline-block;
+    margin-right: 2em;
+    margin-left: 1em;
+}
+.radioquest p {
+    display: inline-block;
+}
+/*Стиль для картинка+вопрос*/
+.flex{
+    display: flex;
+}
+/*Белый текст синий фон напротив текстовое поле*/
+.freeansqest{
+    color: #fff !important;
+    font-weight: 500;
+    background-color: #0070c0;
+    border-radius: 15px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.9em !important;
+}
+.cornum{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.assignnum{
+    border-radius: 15px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left:2em;
+    border:2px solid gray;
+}
+.assignnum,
+.assignnum::placeholder{
+    font-size: 12px;
+}
+.leftimage_zoom_popup{
+    cursor: pointer;
+    border: 0;
+    margin-top:0.4em;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Выбор вариантов*/
+.assignnum_select{
+    border-radius: 15px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left:2em;
+    border:2px solid #0070c0;
+    background-color: #fff ;
+    font-size:0.7em;
+}
+.assignnum_select option{
+    font-size: 0.7em;
+
+}
+.freeansqest_select{
+    color: #fff !important;
+    font-weight: 500;
+    background-color: #0070c0;
+    border-radius: 15px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.8em !important;
+    min-height: 3em;
+}
+.cornum_select{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.4em;
+}
+
+.missingword{
+    width: 30%;
+    height: calc(1.5em + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #212529;
+    background-clip: padding-box;
+    border: 1.5px solid #999999;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}

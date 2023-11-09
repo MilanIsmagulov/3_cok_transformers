@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/Sortable.js"></script>
+
+    <script src="./script/script.js" defer></script>
+    <script src="./script/script2.js" defer></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <title>Комплектные трансформаторные подстанции различного типа
+    </title>
+</head>
+<body>
+    <div class="black_header">
+        <h1>
+            Комплектные трансформаторные подстанции различного типа
+
+        </h1>
+        <div class="links_black_header">
+            <a href="#">На главную</a>
+            <a class="disabled_button" href="#">Назад</a>
+        </div>
+    </div>
+    <div class="head_text">
+        <div class="questions" id="question_number_1">
+            <h2><span>9. </span>Сопоставьте, к какому оборудованию позволяет получить доступ камера КСО.</h2>
+        </div>
+        <div class="number_marker">
+            <img style="cursor: pointer;" onclick="openPopUp2()" src="./content/description.svg" alt="description">
+            <p  style="font-weight: 700;" class="number_description">1/10</p>
+        </div>
+    </div>
+    <div class="main_window">
+        
+        <div class="body-inner">
+            <div class="drag2">
+                <div class="columns" id="columns"></div>
+                <div class="row" id="row"></div>
+            </div>
+        </div>
+        <div class="main_buttons">
+            <div class="step_marker">
+
+            </div>
+            <div class="buttons_div">
+                <button id="check_button_0" onclick="location.href='../javascript_quiz_app_8/index.html'">
+                    Назад
+                </button>
+                <button id="check_button_1" onclick="checkAnswer2()">
+                    Ответить
+                </button>
+                <button id="check_button_2" class="disabled_button" onclick="refreshAnwser2()">
+                    Повторить
+                </button>
+                <button id="check_button_3" class="disabled_button" onclick="location.href='../javascript_quiz_app_10/index.html'">
+                    Далее
+                </button>
+
+            </div>
+        </div>
+        <div id="popup2" class="popup close">
+            <div class="popup_body">
+                <div class="popup_content">
+                    <div class="popup_header">
+                        <h3> </h3>
+                        <button onclick="closePopUp2()"><img src="./content/close.svg" alt="close"></button>
+                    </div>
+                    <div class="popup_text">
+                        <h3>1. Ознакомьтесь с правилами безопасной работы.</h3>
+                        <h3>2. Отметьте, какие меры по безопасности труда должны выполняться для мачтовых КТП не имеющих ограждений.</h3>
+                        <h3>3. Ознакомьтесь с КТП конструкцией столбовой с одной опорой.</h3>
+                        <h3>4. Укажите, какие компоненты формируют распределительное устройство 0,4 кВ.</h3>
+                        <h3>5. Ознакомьтесь с мачтовой трансформаторной подстанцией.</h3>
+                        <h3>6. Укажите, каковы конструктивные особенности исполнения сухого трансформатора и масляного герметичного трансформатора.</h3>
+                        <h3>7. Установить соответствие между маркировкой КТП и описанием ее конструкции.</h3>
+                        <h3>8. Рассмотрите комплектную трансформаторную подстанцию блочного типа.</h3>
+                        <h3>9. Сопоставьте, к какому оборудованию позволяет получить доступ камера КСО.</h3>
+                        <h3>10. Сопоставить описание трансформаторов и наименования.</h3>
+                        <h3>11. Сопоставить описание трансформаторов и наименования.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
