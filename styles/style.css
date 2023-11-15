@@ -327,7 +327,7 @@ a{
 
 @media (max-width: 1120px){
     .main_content_name{
-        font-size: calc(25px + 2vw);
+        font-size: calc(20px + 2vw);
         font-weight: 800;
     }
 

@@ -285,13 +285,8 @@ body{
 }
 
 .step_marker_and_buttons{
-    padding-bottom: 0.5em !important;
-    width: 96%;
-    z-index: 3;
-    position: fixed;
-    bottom:0em;
     background-color: white;
-    padding-top:0.5em;
+    padding: 2vh 2vw;
 }
 
 
@@ -322,6 +317,7 @@ body{
 }
 
 .blocked{
+    display: none;
     background-color: #bfbfbf !important;
 }
 .flexcenter{

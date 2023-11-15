@@ -51,6 +51,9 @@ ansbutton.addEventListener('click',function(event)
                 localStorage.setItem('answer_' + numberOfQuestion, JSON.stringify({questionPlace: false}));
                 event.target.innerHTML="Повторить"
                 event.target.setAttribute('onclick', "window.location.reload();")
+                event.target.addEventListener('click', function(){
+                    window.location.reload()
+                })
                 let nxt = document.getElementById('nextbutton')
                 nxt.removeAttribute('disabled')
                 nxt.classList.remove('blocked')
