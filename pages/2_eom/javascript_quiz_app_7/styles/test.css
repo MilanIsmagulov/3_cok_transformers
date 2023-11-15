@@ -296,8 +296,6 @@ body{
   .numbers{
     display: flex;
     flex-direction: column;
-
-    height: 58vh;
     justify-content: space-around;
   }
 
@@ -367,6 +365,7 @@ body{
   
 
    .blocked{
+    display: none;
     background-color: #bfbfbf !important;
    }
 
@@ -395,8 +394,6 @@ body{
   .numbers{
     display: flex;
     flex-direction: column;
-
-    height: 80vh;
     justify-content: space-around;
   }
   

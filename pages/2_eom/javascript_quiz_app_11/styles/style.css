@@ -37,9 +37,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 95px;
     color: white;
     background-color: black;
+}
+
+.black_header h1{
+    width: 70% !important;
+}
+
+.links_black_header{
+    min-width: 165px;
 }
 
 .black_header a{
@@ -50,7 +57,6 @@ body{
     border: solid 2px;
     border-radius: 35px;
     width: 300px;
-    margin-left: 25px;
     transition: all 0.3s;
 }
 
@@ -194,6 +200,11 @@ input:disabled {
 
     }
 
+
+    .black_header h1{
+        width: 60%;
+    }
+
     .answers_btn form {
         width: 700px;
         
@@ -202,6 +213,9 @@ input:disabled {
         width: 700px;
 
     }
+
+
+
     .choices_div2{
         width: 700px;
     }
@@ -218,7 +232,7 @@ input:disabled {
     .step_marker_and_buttons {
         width: 90vw;
         padding-bottom: 0px;
-        
+        padding-bottom: 25px !important;
     }
 
     .answers_btn form div {

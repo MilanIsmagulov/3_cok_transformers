@@ -321,6 +321,7 @@ body{
     background-color: #bfbfbf !important;
 }
 .flexcenter{
+    width: 50% !important;
     display: flex !important;
     justify-content: center;
     align-items: flex-end;
@@ -389,7 +390,7 @@ body{
     width: 70% !important;
 }
 .w60{
-    width: 60% !important;
+    width: clamp(400px,30vw,600px) !important;
 }
 .w80{
     width: 80% !important;

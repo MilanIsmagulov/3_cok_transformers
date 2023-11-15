@@ -64,6 +64,7 @@
 .columns {
   display: flex;
   gap: 40px;
+  margin: 3px;
 }
 .col {
   list-style: none;
@@ -94,10 +95,10 @@
   list-style: none;
   display: flex;
   gap: 10px;
-
+  flex-wrap: wrap;
   min-height: 80px;
   min-width: 50%;
-
+  justify-content: center;
   border-radius: 25px;
 
 }
@@ -230,7 +231,7 @@
   .row, .row2 {
     min-height: 85px;
     min-width: 25%;
-    flex-direction: column;
+
   }
 }
 

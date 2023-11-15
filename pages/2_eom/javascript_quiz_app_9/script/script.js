@@ -53,6 +53,18 @@ for (let i = 0; i < numberOfQuestionSum-numberOfQuestion; i++){
 let stepPlaceDescription = document.querySelector('.number_description');
 stepPlaceDescription.innerHTML = numberOfQuestion + '/' + numberOfQuestionSum;
 
+checkAll()
+
+function checkAll(){
+    let checkAnswerBtn = document.querySelector('#check_button_1')
+    checkAnswerBtn.addEventListener('click', function(){
+        let rowsElement = document.querySelector('#row')
+        if (Object.keys(rowsElement.children).length === 0){
+            checkAnswer2()
+        }
+    })
+};
+
 
 function init2() {
     createColumns();
@@ -109,7 +121,7 @@ function createList2() {
 
     addEventListeners2();
     console.log(localStorage)
-
+    window.location.reload();
 }
 
 function loadList2() {
