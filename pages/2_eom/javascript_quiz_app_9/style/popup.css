@@ -1,5 +1,5 @@
 .popup_text{
-
+    height: 85% !important;
     overflow-y: auto;
     scroll-snap-align: start;
     padding: 15px;
@@ -283,11 +283,6 @@
 }
 
 @media (max-width: 1180px) {
-    .black_header{
-        height: 120px;
-    }
-
-
     .black_header h1{
         width: 50%;
     }
@@ -296,9 +291,6 @@
         display: flex;
     }
 
-    .theory_eom{
-        height: 400px;
-    }
     .content{
         margin-right: 0;
     }
@@ -314,8 +306,7 @@
     }
     .popup_text{
         display: flex;
-        align-items: center;
-        height: 500px;
+        align-items: flex-start !important;
     }
 }
 
