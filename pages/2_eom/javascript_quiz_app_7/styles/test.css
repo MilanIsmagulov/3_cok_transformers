@@ -400,7 +400,7 @@ body{
     .item{
       height: 150px;
       width: 100%;
-      font-size: 1em;
+      font-size: 1.75vw;
       padding-left: 25px;
       border-radius: 5px 5px 5px 5px;
       display: flex;

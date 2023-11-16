@@ -400,12 +400,27 @@ body{
     .item{
       height: 150px;
       width: 100%;
-      font-size: 1em;
+      font-size: 1.75vw;
       padding-left: 25px;
       border-radius: 5px 5px 5px 5px;
       display: flex;
       align-items: center;
       box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+    .step_marker_and_buttons{
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 25px !important;
+    }
+    .step_marker{
+        margin-bottom: 25px;
+    }
+    .number{
+        width: 250px !important;
+        font-size: 20px !important;
+    }
+    .number img{
+        display: none;
     }
    }
 
