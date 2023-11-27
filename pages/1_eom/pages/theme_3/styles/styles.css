@@ -16,6 +16,14 @@ body{
     height: 100vh;
 }
 
+p{
+    font-size: clamp(25px,2vw,28px) !important;
+}
+
+li{
+    font-size: clamp(20px,2vw,25px) !important;
+}
+
 .container{
     height: 100%;
 }
@@ -81,8 +89,6 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
     scroll-snap-align: start;
     padding: 35px;
     margin: 0px 25px 25px 0px; 
@@ -299,7 +305,7 @@ body{
 
 .wrapper_img {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -396,10 +402,6 @@ body{
     opacity: .75;
 }
 
-
-
-
-
 .img_partition{
     display: flex;
     align-items: flex-start;
@@ -408,6 +410,8 @@ body{
 }
 
 .img_partition img{
+    min-width: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
 
@@ -423,7 +427,6 @@ body{
 
 .content_img img{
     margin: 15px;
-    
 }
 
 .content_img p{
@@ -448,6 +451,9 @@ font-size: 20px;
 }
 
 @media (max-width: 1445px){
+    .first_part{
+        flex-direction: column;
+    }
     .black_header{
         text-align: center;
         height: 200px;
@@ -467,10 +473,14 @@ font-size: 20px;
     }
 }
 
-@media (max-width: 1131px){
+@media (max-width: 1180px){
     .content img{
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .content p{
+        margin: 0 !important;
     }
 
     .text_content{
@@ -480,9 +490,6 @@ font-size: 20px;
     .first_part{
         flex-direction: column;
     }
-}
-
-@media (max-width: 1131px){
     .content_img{
         margin-left: 0;
         margin-right: 0;
@@ -513,7 +520,6 @@ font-size: 20px;
     .anim_buttons a div {
         margin-bottom: 0;
     }
-    
 }
 
 @media (max-width: 618px){

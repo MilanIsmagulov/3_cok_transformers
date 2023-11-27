@@ -85,8 +85,6 @@ body{
 .content{
     display: flex;
     flex-direction: column;
-    height: 83vh;
-    overflow-y: auto;
     scroll-snap-align: start;
     padding: 35px;
     margin: 0px 25px 25px 0px;
@@ -402,6 +400,7 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    background: #ffffff;
 
 }
 
@@ -470,11 +469,16 @@ font-size: 30px;
     }
 }
 
-@media (max-width: 1131px){
+@media (max-width: 1180px){
     .content img{
         margin-left: 0;
         margin-right: 0;
     }
+    .text_content{
+        padding: 15px;
+        width: 100%;
+    }
+
 
     .text_content{
         margin-top: 25px;
@@ -513,9 +517,6 @@ font-size: 30px;
 }
 
 @media (max-width: 768px) {
-
-
-
     .modal-dialog {
         width: 90%;
     }

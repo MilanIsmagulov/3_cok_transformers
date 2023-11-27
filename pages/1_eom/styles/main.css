@@ -21,7 +21,8 @@ body{
     background-color: rgba(189, 215, 238, 0.85);
     background-size: cover;
     min-height: 100%;
-}
+    min-width: 100vw;
+    }
 
 .black_header{
     padding: 30px;
