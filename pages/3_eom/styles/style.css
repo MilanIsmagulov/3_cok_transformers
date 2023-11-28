@@ -20,15 +20,14 @@ header {
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 35px !important;
 }
 
 .header_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4vh;
-    padding: 2vw;
+    padding: 1vw;
 }
 
 .header_links {
@@ -110,9 +109,9 @@ header h1 {
 }
 
 .logo_wrap img{
-    padding-top: 25px;
-    height: 800px;
-    width: 100px;
+    padding: 25px;
+    height: 700px;
+    width: auto;
 }
 
 .score_wrap {
@@ -212,24 +211,27 @@ header h1 {
 }
 
 .question_type_1_answers input{
-    width: 31px !important;
+    width: 40px !important;
     height: 30px !important;
     box-sizing: border-box !important;
     appearance: none !important;
-    background: white !important;
+    background: #ffffff00 !important;
     outline: 0.15vw solid rgb(255 89 93) !important;
     border: 0.4vw solid white !important;
-    border-radius: 0px !important;
+    border-radius: 1px !important;
     margin-left: 3vh !important;
     pointer-events: none !important;
     -webkit-border-radius: 2rem !important;
 }
 
-
+.question_type_1_answers input:checked{
+    accent-color: red !important;
+    background-color: rgb(255, 114, 118) !important;
+}
 
 @media (width <= 1280px) {
     header h1 {
-        font-size: 40px;
+        font-size: 30px !important;
     }
 
     .header_links a {
@@ -240,11 +242,7 @@ header h1 {
         width: 150px;
         margin-left: 20px;
     }
-
-    .header_wrap {
-        height: 60px;
-    }
-    
+   
     .question_wrap button {
         font-size: 30px;
         padding: 10px;
@@ -300,10 +298,7 @@ header h1 {
 }
 
 @media (width <= 1000px) {
-    .header_wrap {
-        height: 35px;
-    }
-    
+   
     .question_wrap button {
         font-size: 25px;
         width: 120px;
