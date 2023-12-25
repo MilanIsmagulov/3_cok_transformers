@@ -20,6 +20,10 @@
     padding: 30px 20px;
 }
 
+.backgr_0{
+    background-color: #ffffff00;
+}
+
 .popup_content {
     background-color: white;
     color: black;

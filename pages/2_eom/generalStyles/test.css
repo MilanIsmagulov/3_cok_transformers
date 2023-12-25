@@ -296,8 +296,8 @@ body{
 }
 .popup_text h3 p span{
     color: #000;
-    font-size: 40px;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 500;
     margin-right: 15px;
 }
 .popup_text h3 p{
@@ -688,4 +688,9 @@ body{
     border: 1.5px solid #999999;
     border-radius: 10px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.img_popup{
+    width: auto !important;
 }

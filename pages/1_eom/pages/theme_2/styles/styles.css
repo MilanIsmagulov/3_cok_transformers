@@ -16,6 +16,10 @@ body{
     height: 100vh;
 }
 
+.backgr_0{
+    background-color: #ffffff00;
+}
+
 .container{
     height: 100%;
 }

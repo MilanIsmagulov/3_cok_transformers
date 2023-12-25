@@ -315,3 +315,9 @@ input:disabled {
         width: 40% !important;
     }
 }
+
+
+
+.img_popup{
+    width: auto !important;
+}
